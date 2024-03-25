@@ -47,6 +47,9 @@ table {
 	border-spacing: 0;
 }
 
+html{
+    box-sizing: border-box;
+}
 body{
     background-color: rgb(70, 70, 185);
     min-height: 100vh;
@@ -67,23 +70,23 @@ body{
     padding: 15px 25px;
 }
 .meeting{
-    border-bottom:1px solid gray ;
+    border-bottom:1px solid #e1f1ff;
 }
 .meeting:last-child{
     border-bottom: none;
 }
 .meeting-header{
-    color: gray;
+    color: rgb(161, 159, 159);
     letter-spacing: 1px;
     font-weight: 600;
 }
 .meeting-img{
-    margin-bottom: 15px;
+    margin-bottom: 25px;
     max-width: 100%;
 }
 .meeting-feature{
     margin: 50px 0 25px;
-    color: #016ff9
+    color: rgb(70, 70, 185);
 }
 .pricing-features-item{
     font-weight: 600;
@@ -92,4 +95,40 @@ body{
     line-height: 1.5;
     padding: 15px 0;
     border-top: 1px solid #e1f1ff;
+}
+.pricing-features-item:last-child{
+    border-bottom: 1px solid #e1f1ff;
+}
+.pricing-price{
+    color: rgb(70, 70, 185);
+    display: block;
+    font-size: 32px;
+    font-weight: 700;
+}
+.pricing-button{
+    border: 1px solid rgb(70, 70, 185);
+    border-radius: 10px;
+    color: rgb(70, 70, 185);
+    display: inline-block;
+    padding: 15px 35px;
+    text-decoration: none;
+    margin: 25px 0;
+}
+.pricing-button:hover{
+    background-color: rgb(70, 70, 185);
+    color: #fff;
+}
+
+@media (min-width: 900px) {
+    .container{
+        flex-direction: row;
+    }
+    .container{
+        border-bottom: none;
+        border-right: 1px solid #e1f1ff;
+        padding: 25px 50px;
+      }
+      /* .container:last-child{
+        border-right: none; */
+      /* } */
 }
