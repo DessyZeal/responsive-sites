@@ -63,5 +63,33 @@ body{
     flex-direction: column;
     text-align: center;
     text-transform: uppercase;
-
+    border-radius: 10px;
+    padding: 15px 25px;
+}
+.meeting{
+    border-bottom:1px solid gray ;
+}
+.meeting:last-child{
+    border-bottom: none;
+}
+.meeting-header{
+    color: gray;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+.meeting-img{
+    margin-bottom: 15px;
+    max-width: 100%;
+}
+.meeting-feature{
+    margin: 50px 0 25px;
+    color: #016ff9
+}
+.pricing-features-item{
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 12px;
+    line-height: 1.5;
+    padding: 15px 0;
+    border-top: 1px solid #e1f1ff;
 }
